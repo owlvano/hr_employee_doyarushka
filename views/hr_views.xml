@@ -1,0 +1,31 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->    
+    <record model="ir.ui.view" id="view_employee_form">
+      <field name="name">hr.employee.form</field>
+      <field name="model">hr.employee</field>
+      <field name="inherit_id" ref="hr.view_employee_form" />
+      <field name="arch" type="xml">
+        <page name="hr_settings" position="inside">
+          <group name="active_group" position="after">
+            <group string='Other' name="other_group">
+              <field name="first_work_day"/>
+            </group>
+          </group>
+        </page>
+      </field>
+    </record>
+    
+    <record id="view_employee_tree" model="ir.ui.view">
+      <field name="name">hr.employee.tree</field>
+      <field name="model">hr.employee</field>
+      <field name="inherit_id" ref="hr.view_employee_tree" />
+      <field name="arch" type="xml">
+        <field name="message_needaction" position="after">
+          <field name="first_work_day" />
+        </field>
+      </field>
+    </record>
+    
+  </data>
+</odoo>
