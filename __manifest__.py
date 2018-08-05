@@ -17,13 +17,15 @@
     'version': '0.1',
 	'license':'LGPL-3',
     # any module necessary for this one to work correctly
-    'depends': ['base', 'hr'],
+    'depends': ['base', 'hr_recruitment'],
 
     # always loaded
     'data': [
         # 'security/ir.model.access.csv',
         'views/hr_views.xml',
+        'views/hr_settings_views.xml',
         'views/templates.xml',
+        'data/cron.xml',
     ],
     # only loaded in demonstration mode
     'demo': [
