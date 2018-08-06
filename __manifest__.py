@@ -24,8 +24,7 @@
         # 'security/ir.model.access.csv',
         'views/hr_views.xml',
         'views/hr_settings_views.xml',
-        'views/templates.xml',
-        'data/cron.xml',
+        # 'data/cron.xml',
     ],
     # only loaded in demonstration mode
     'demo': [

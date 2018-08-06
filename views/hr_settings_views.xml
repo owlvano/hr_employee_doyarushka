@@ -12,7 +12,7 @@
             <button string="Cancel" type="object" name="cancel" class="oe_link"/>
           </header>
           <group>
-            <field name="default_days_limit"/>
+            <field name="days_limit"/>
           </group>
         </form>
       </field>
