@@ -19,7 +19,7 @@ class Employee(models.Model):
     @api.multi
     def _compute_newly_hired_employee(self):
         for record in self:         
-                record.newly_hired_employee = (record.first_work_day == False or self.env['ir.values'].get_default('hr.employee.settings', 'days_limit') >= record.days_since_first_work_day)
+                record.newly_hired_employee = (record.first_work_day == False or self.env['ir.values'].get_default('hr.employee.settings', 'days_limit') > record.days_since_first_work_day)
 
     @api.multi
     def _search_newly_hired_employee(self, operator, value):
