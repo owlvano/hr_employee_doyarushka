@@ -1,10 +1,7 @@
 # -*- coding: utf-8 -*-
-from odoo import http
+# from odoo import http
 
 # class HrEmployeeDoyarushka(http.Controller):
-#     @http.route('/hr_employee_doyarushka/hr_employee_doyarushka/', auth='public')
-#     def index(self, **kw):
-#         return "Hello, world"
 
 #     @http.route('/hr_employee_doyarushka/hr_employee_doyarushka/objects/', auth='public')
 #     def list(self, **kw):
