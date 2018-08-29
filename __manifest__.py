@@ -21,12 +21,9 @@
 
     # always loaded
     'data': [
-        # 'security/ir.model.access.csv',
+        'security/ir.model.access.csv',
         'views/hr_views.xml',
         'views/hr_settings_views.xml',
-        'views/hr_recruitment_views.xml',
-        'views/templates.xml',
-        # 'data/cron.xml',
     ],
     # only loaded in demonstration mode
     'demo': [

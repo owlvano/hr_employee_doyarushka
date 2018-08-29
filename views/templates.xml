@@ -1,7 +1,0 @@
-<odoo>
-    <template id="assets_backend" name="kanban_view" inherit_id="web.assets_backend">
-        <xpath expr="." position="inside">
-            <script type="text/javascript" src="/hr_employee_doyarushka/static/src/js/kanban_view.js"/>
-        </xpath>
-    </template>
-</odoo>
